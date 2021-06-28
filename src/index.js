@@ -14,6 +14,6 @@ app.use(cors())
 
 app.use(express.json())
 app.use(userRouter)
-// app.use(recipeRouter)
+app.use(recipeRouter)
 
 app.listen(port, () => console.log('Server is online on port ' + port))

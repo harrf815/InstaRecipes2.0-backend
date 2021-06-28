@@ -1,5 +1,5 @@
 
-const mongoose= requie('mongoose')
+const mongoose= require('mongoose')
 
 const recipeSchema = new mongoose.Schema({
     name: {
