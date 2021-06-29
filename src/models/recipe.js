@@ -22,7 +22,7 @@ const recipeSchema = new mongoose.Schema({
         trim: true, 
     },
     image: {
-        type: Buffer 
+        type: String
     },
     directions: {
         type: String,

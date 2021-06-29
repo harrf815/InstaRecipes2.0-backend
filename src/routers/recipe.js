@@ -21,6 +21,17 @@ router.post('/recipes', auth, async (req, res) => {
     }
 })
 
+//! GET ------------------------------------
+
+router.get('/recipes', async (req, res) => {
+
+    try {
+        const recipes = await Recipe.find({})
+        res.send(recipes)
+    } catch (e) {
+        res.status(400).send(e)
+    }
+})
 
 
 module.exports = router 
